@@ -1,1 +1,11 @@
-# Corporate-default-prediction-using-machine-learning
+# Corporate default prediction using machine learning
+
+Corporate defaults have become quite common in recent years, indicating that companies need to carefully manage their financial health. The prediction of corporate defaults offers means to predict the company’s financial status in the future, allowing the management to take preventive actions and avoid financial crises if needed. In this context, the following question is particularly important: ”Can a model be developed to accurately predict corporate defaults within the next ‘n’ months based on current financial data?”
+
+This research includes the use of historical financial market data - that provides a complete overview of the company’s market performance - from a well-known database called Investing.com. The data mainly includes equity-based economic indicators such as closing prices, trading volumes, simple moving averages, relevant price changes and ratios, etc. for publicly traded US banks - 4 failed (Credit Suisse, First Republic, Signature Bank, Silicon Valley Bank) and 4 successful (Goldman Sachs, Bank of America, JPMorgan Chase, Wells Fargo).
+
+The default indicating variable is defined in such a way that a bank is said to have defaulted on a particular day if its closing price has dropped by 30% or more from the last closing price (t - 1 day) or over the previous 3 years (roughly 1100 days). Based on this, the target variable "Will_default" is defined such that it is True if the bank defaults within the next 3-month (90 days) time window, and is False otherwise.
+
+A Random Forest model is chosen for its efficiency in managing large datasets and high prediction accuracies in default prediction. Performance metrics such as accuracy rate, precision and recall, F1 score, and ROC-AUC are implemented to choose the model with the best default prediction accuracy and the least error rate, and an impressive accuracy of roughly 96% is achieved with about 500+ accurate default predictions.
+
+The successful development of a predictive model for corporate defaults could provide companies with a powerful tool to predict and manage financial risks. By contributing to the previous work done in financial risk management this project aims to offer an efficient solution to enhance corporate resilience against potential defaults and allow businesses to better foresee and manage financial crises.
